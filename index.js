@@ -11,13 +11,13 @@ mercadopago.configure({
     access_token: "TEST-1125146177585069-090711-e9f64375f382a09361d09cb9313e6a74-236426650",
   });
 
-const products = [
+let products = [
     {
         id: 1,
         name: "Landing Page",
         price: 10000,
         image: "./img/shop img/landing-pages-14-11.png",
-        stock: 3,
+        stock: 100,
     },
 
     {
@@ -25,7 +25,7 @@ const products = [
         name: "Sitio Web",
         price: 15000,
         image: "./img/shop img/landing-pages-14-11.png",
-        stock: 5,
+        stock: 100,
     },
 
     {
@@ -33,7 +33,7 @@ const products = [
         name: "E-commerce",
         price: 27000,
         image: "./img/shop img/landing-pages-14-11.png",
-        stock: 2,
+        stock: 100,
     },
 ]
 
@@ -44,10 +44,17 @@ app.get('/api/products', (req, res) => {
 
 app.post('/api/pay', (req, res) => {
     const ids = req.body;
+    const productsCopy = products.map(p => ({...p}))
     ids.forEach(id => {
-        const product = products.find(p => p.id === id);
+        const product = productsCopy.find(p => p.id === id);
+        if(product.stock > 0){
         product.stock--;
+        }
+        else{
+            throw("Sin Stock");
+        }
     });
+    products = productsCopy
     res.send(products);
   })
 
