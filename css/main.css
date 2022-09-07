@@ -67,7 +67,7 @@ h3{
       width: 100%;
       height: 4px;
       border-radius: 10px;
-      background: #d99393;
+      background: var(--rosa);
       margin-top: 6px;
       transition: all 300ms;
       transform-origin: 0px 100%; }
