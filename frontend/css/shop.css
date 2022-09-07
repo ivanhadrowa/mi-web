@@ -42,11 +42,32 @@ h1{
     position: absolute;
     right: 15px;
     bottom: 8px;
+    
   }
   
   .button-add:hover {
     background-color: #4CAF50; /* Green */
     color: white;
+  }
+
+  .button-add.disabled {
+    transition-duration: 0.4s;
+    border: none;
+    font-size: 16px;
+    text-align: center;
+    background-color: white;
+    color: rgb(184, 181, 181);
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px 15px;
+    position: absolute;
+    right: 15px;
+    bottom: 8px;
+  }
+  
+  .button-add.disabled:hover {
+    background-color: #ffffff; /* Green */
+
   }
 
 .product-container{

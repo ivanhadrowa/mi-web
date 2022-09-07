@@ -20,7 +20,7 @@ let total = 0;
 
 function add(productId, price){
 
-    const product = productList.find(p => p.id === id);
+    const product = productList.find(p => p.id === productId);
     product.stock--;
 
     console.log(productId, price);
@@ -47,9 +47,9 @@ async function pay(){
 function displayProducts(){
     let productsHTML = '';
     productList.forEach(p => {
-        let buttonHTML = `<button class="button-add" onclick="add(${p.id}, ${p.price})" >Agregar</button>`
+        let buttonHTML = `<button class="button-add disabled" onclick="add(${p.id}, ${p.price})" >Agregar</button>`
 
-        if(p.stock <= 0){
+        if (p.stock <= 0){
             buttonHTML = `<button disabled class="button-add" onclick="add(${p.id}, ${p.price})" >Sin Stock</button>`
         }
 

@@ -17,7 +17,7 @@ const products = [
         name: "Landing Page",
         price: 10000,
         image: "./img/shop img/landing-pages-14-11.png",
-        stock: 100,
+        stock: 3,
     },
 
     {
@@ -25,7 +25,7 @@ const products = [
         name: "Sitio Web",
         price: 15000,
         image: "./img/shop img/landing-pages-14-11.png",
-        stock: 100,
+        stock: 5,
     },
 
     {
@@ -33,7 +33,7 @@ const products = [
         name: "E-commerce",
         price: 27000,
         image: "./img/shop img/landing-pages-14-11.png",
-        stock: 100,
+        stock: 2,
     },
 ]
 
