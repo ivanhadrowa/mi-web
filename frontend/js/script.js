@@ -20,7 +20,7 @@ let total = 0;
 
 function add(productId, price){
 
-    const product = products.find(p => p.id === id);
+    const product = productList.find(p => p.id === id);
     product.stock--;
 
     console.log(productId, price);
@@ -31,7 +31,7 @@ function add(productId, price){
 }
 
 async function pay(){
-    const productList = await (await fetch("/api/pay",{
+        const productList = await (await fetch("/api/pay",{
         method: "post",
         body: JSON.stringify(carrito),
         headers: {
@@ -46,13 +46,19 @@ async function pay(){
 
 function displayProducts(){
     let productsHTML = '';
-    productList.forEach(element => {
+    productList.forEach(p => {
+        let buttonHTML = `<button class="button-add" onclick="add(${p.id}, ${p.price})" >Agregar</button>`
+
+        if(p.stock <= 0){
+            buttonHTML = `<button disabled class="button-add" onclick="add(${p.id}, ${p.price})" >Sin Stock</button>`
+        }
+
         productsHTML +=
         `<div class="product-container">
-            <h3>${element.name}</h3>
-            <img src="${element.image}" alt="">
-            <h1>${element.price}</h1>
-            <button class="button-add" onclick="add(${element.id}, ${element.price})" >Agregar</button>
+            <h3>${p.name}</h3>
+            <img src="${p.image}" alt="">
+            <h1>${p.price}</h1>
+            ${buttonHTML}
         </div>`
     });
     document.getElementById('page-content').innerHTML = productsHTML
@@ -60,7 +66,7 @@ function displayProducts(){
 
 window.onload = async() => {
     
-    const productList = await (await fetch("/api/products")).json();
+    productList = await (await fetch("/api/products")).json();
     console.log(productList)
     displayProducts();
 }
