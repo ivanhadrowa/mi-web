@@ -14,6 +14,7 @@
       <a href=""
         ><img class="logo" src="./img/Design Moah CD/moah rosa png.png" alt=""
       /></a>
+      <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
 
     </header>
 
@@ -32,25 +33,32 @@
             <a href="./index.html">Contacto</a>
         </nav>
 
+    <h1>Shop</h1>
+
     <div class="page-content">
         <div class="product-container">
             <h3>nombre</h3>
             <img src="./img/shop img/landing-pages-14-11.png" alt="">
-            <h3>$10.000</h3>
-            <button>Agregar</button>
+            <h1>$10.000</h1>
+            <button class="button-add" onclick="add('product-1', 10000)" >Agregar</button>
         </div>
 
         <div class="product-container">
             <h3>nombre</h3>
             <img src="./img/shop img/landing-pages-14-11.png" alt="">
-            <h3>$18.000</h3>
-            <button>Agregar</button>
+            <h1>$15.000</h1>
+            <button class="button-add" onclick="add('product-2', 15000)" >Agregar</button>
         </div>
 
         <div class="product-container">
             <h3>nombre</h3>
             <img src="./img/shop img/landing-pages-14-11.png" alt="">
-            <h3>$27.000</h3>
-            <button>Agregar</button>
+            <h1>$27.000</h1>
+            <button class="button-add" onclick="add('product-3', 27000)" >Agregar</button>
         </div>
     </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
