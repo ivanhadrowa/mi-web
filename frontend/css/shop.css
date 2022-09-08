@@ -1,5 +1,5 @@
 header{
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .page-content{
@@ -49,8 +49,7 @@ h1{
     position: absolute;
     right: 15px;
     bottom: 8px;
-    
-  }
+}
   
   .button-add:hover {
     background-color: #4CAF50; /* Green */
