@@ -82,7 +82,7 @@ h3{
     opacity: 0;
     margin-left: -30px; }
   
-  @media (max-width: 600px) {
+  @media (max-width: 700px) {
     header {
       justify-content: space-between;
       align-items: center; }
@@ -107,7 +107,7 @@ header{
   display: flex;
   background-color: white;
 }
-@media (max-width:600px){
+@media (max-width:700px){
   header{  -webkit-box-shadow: 0px 10px 13px -7px #000000, 5px 5px 14px 5px rgba(238,255,249,0); 
     box-shadow: 0px 10px 13px -7px #000000, 5px 5px 14px 5px rgba(238,255,249,0);}
 }
@@ -130,8 +130,15 @@ nav a{
   color: #d99393;
 }
 
+@media(min-width:701px){
+    .menu__desplegable{
+      display: flex;
+      justify-content: space-around;
+    }
+}
+
 /* INICIO */
-@media (max-width:600px){
+@media (max-width:700px){
 .inicio-img{
   width: 100%;
 }
