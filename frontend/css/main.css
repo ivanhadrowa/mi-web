@@ -149,6 +149,7 @@ nav a{
 .inicio-textos{
   width: 90%;
   margin: 10px auto;
+  
 }
 .inicio-textos a{
   background-color: var(--violeta);
@@ -170,6 +171,7 @@ nav a{
 }
 }
 
+
 .elegirnos{
   width: 90%;
   margin: 0 auto;
@@ -179,3 +181,58 @@ nav a{
   text-align: center;
 }
 
+/*SERVICIOS*/
+.servicios{
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+}
+.servicios h2{
+  text-align: center;
+  font-size: 25px;
+  color: #9cc5d5;
+}
+
+.servis{
+  width: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:701px){
+  header{
+    justify-content: center;
+  }
+
+  .inicio-img img{
+    width: 100%;
+  }
+
+  .inicio{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+.inicio-textos{
+  min-width: 500px;
+  text-align: center;
+}
+h1{
+  text-align: center;
+}
+
+}
