@@ -136,6 +136,18 @@ nav a{
       justify-content: space-around;
     }
 }
+.inicio-textos a{
+  background-color: var(--violeta);
+  padding: 1rem 3rem;
+  border-radius: 40px;
+  margin-top: 10rem;
+  color: white;
+  text-decoration: none;
+  transition: .3s;
+}
+.inicio-textos a:hover{
+  background-color: var(--rosa);
+}
 
 /* INICIO */
 @media (max-width:700px){
@@ -169,6 +181,10 @@ nav a{
 .inicio-textos h3{
   text-align: left;
 }
+.elegirnos h3{
+  font-size: 35px;
+  margin-bottom: 5px;
+}   
 }
 
 
@@ -179,6 +195,9 @@ nav a{
 }
 .elegirnos p{
   text-align: center;
+  width: 75%;
+  margin: 0 auto;
+  
 }
 
 /*SERVICIOS*/
@@ -187,14 +206,25 @@ nav a{
   margin: 0 auto;
   text-align: center;
 }
-.servicios h2{
+.titulo-servicios{
   text-align: center;
-  font-size: 25px;
-  color: #9cc5d5;
+  font-size: 35px;
+  color: var(--rosa);
+  margin-top: 30px;
 }
 
 .servis{
   width: 200px;
+}
+
+.menu__desplegable a{
+  transition: all .2s;
+}
+
+.menu__desplegable a:hover{
+  transform: scale(1.1);
+  color: #7698a5
+  ;
 }
 
 
@@ -216,23 +246,80 @@ nav a{
 @media (min-width:701px){
   header{
     justify-content: center;
+    background: transparent;
   }
-
-  .inicio-img img{
-    width: 100%;
+  
+  .inicio-img {
+    display: none;
   }
 
   .inicio{
     max-width: 100%;
     display: flex;
     flex-direction: row-reverse;
+    justify-content: space-evenly;
+    background-color: linear-gradient(90deg, #defaff 0%, #d6f7ff 100%);
+    border-bottom: 1px solid rgb(192, 190, 190);
+
 }
 .inicio-textos{
-  min-width: 500px;
+  justify-content: center;
   text-align: center;
+  flex-direction: column;
+  max-width: 80%;
+  margin: 30px 0;
 }
 h1{
   text-align: center;
 }
+.inicio-textos h3{
+  padding: 0;
+  margin: 0;
+  font-size: 30px;
+}
+.inicio-textos p{
+  margin-bottom: 38px;
+  font-size: 22px;
+}
+.inicio-textos h1{
+  font-size: 40px;
+}
+.menu__desplegable{
+  -webkit-box-shadow: 0px 9px 13px -12px rgba(0,0,0,0.23);
+  -moz-box-shadow: 0px 9px 13px -12px rgba(0,0,0,0.23);
+  box-shadow: 0px 9px 13px -12px rgba(0,0,0,0.23);
+margin-bottom: 4px;}
 
+.elegirnos h3{
+  font-size: 35px;
+  
+}
+.elegirnos {
+  font-size: 19px;
+  
+}
+
+
+
+}
+
+.tipos-servicios p{
+  padding-bottom: 40px;
+  width: 80%;
+  margin: 0 auto;
+}
+
+
+@media(min-width:1000px){
+
+  .servicios{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .tipos-servicios{
+    width: 400px;
+    margin: 0 40px;
+  }
 }
