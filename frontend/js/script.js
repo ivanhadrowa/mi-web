@@ -108,14 +108,20 @@ function displayProducts(){
 
     let productsHTML = '';
     productList.forEach(p => {
-        let buttonHTML = `<button class="button-add" onclick="add(${p.id}, ${p.price})" >Agregar</button>`
+        let buttonHTML = `<button class="button-add" onclick="add(${p.id}, ${p.price}, Swal.fire({
+            position: 'top-end',
+            icon: 'success',
+            title: 'Añadido al Carrito',
+            showConfirmButton: false,
+            timer: 1500
+          }))" >Agregar</button>`
 
         if (p.stock <= 0){
             buttonHTML = `<button disabled class="button-add disabled" onclick="add(${p.id}, ${p.price})" >Sin Stock</button>`
         }
 
         productsHTML +=
-        `<div class="product-container">
+        `<div  class="product-container">
             <h3>${p.name}</h3>
             <img src="${p.image}" alt="">
             <h1>${p.price}</h1>
@@ -133,3 +139,4 @@ async function fetchProducts(){
 window.onload = async() => {
     await fetchProducts();
 }
+
