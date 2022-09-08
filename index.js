@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({extended:true}));
 app.use(bodyParser.json());
 
 mercadopago.configure({
-    access_token: "APP_USR-bf1b3703-93d1-40b1-9d5e-08f478a94918",
+    access_token: "APP_USR-1125146177585069-090711-fa9be3e6c3839c69822af123df040841-236426650",
   });
 
 let products = [
