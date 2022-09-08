@@ -140,3 +140,21 @@ h2#order-total{
 #product.cards.product-cards{
     margin-top: 25px;
 }
+
+h2{
+    color: #64a5b1;
+    text-align: center;
+    font-size: 30px;
+    width: 90%;
+    margin: 30px auto;
+}
+
+
+@media (min-width:701px){
+    h2{
+        color: #64a5b1;
+        text-align: center;
+        font-size: 40px;
+        
+    }
+}

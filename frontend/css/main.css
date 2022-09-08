@@ -185,6 +185,20 @@ nav a{
   font-size: 35px;
   margin-bottom: 5px;
 }   
+.elegirnos{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: flex;
+  flex-direction: column;
+}
+.foto-nosotros{
+  max-width: 300px;
+  margin-left: 50px;
+}
+.foto-nosotros img{
+  width: 100%;
+}
 }
 
 
@@ -192,7 +206,7 @@ nav a{
   width: 90%;
   margin: 0 auto;
   margin-top: 5rem;
-}
+ }
 .elegirnos p{
   text-align: center;
   width: 75%;
@@ -294,12 +308,32 @@ margin-bottom: 4px;}
   font-size: 35px;
   
 }
-.elegirnos {
-  font-size: 19px;
+.elegirnos{
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 5rem;
+  display: flex;
   
 }
-
-
+.foto-nosotros{
+  max-width: 300px;
+  min-width: 240px;
+}
+.foto-nosotros img{
+  width: 100%;
+}
+.nosotros-texto h3{
+  margin-bottom: 5px;
+  text-align: left;
+}
+.nosotros-texto {
+  margin: 0 15px;
+  width: 500px;
+}
+.nosotros-texto p{
+  text-align: left;
+  width: 100%;
+}
 
 }
 
@@ -322,4 +356,30 @@ margin-bottom: 4px;}
     width: 400px;
     margin: 0 40px;
   }
+
+  .elegirnos{
+    display: flex;
+    justify-content: center;
+  }
+  .foto-nosotros{
+    max-width: 400px;
+    min-width: 240px;
+    margin-right: 50px;
+  }
+  .nosotros-texto p{
+    text-align: left;
+    width: 100%;
+    font-size: 25px;
+  }
+  .nosotros-texto{
+    margin-left: 50px;
+  }
+
+  .logo{
+    width: 200px;
+    margin: 3px 3px 3px 20px;
 }
+  
+  
+}
+
