@@ -11,10 +11,10 @@
   </head>
   <body>
     <header>
-      <a href=""
+      <a href="./index.html"
         ><img class="logo" src="./img/Design Moah CD/moah rosa png.png" alt=""
       /></a>
-      <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
+      <button id="checkout" class="button-checkout" onclick="showOrder()">Carrito</button>
 
     </header>
 
@@ -33,9 +33,42 @@
             <a href="./index.html">Contacto</a>
         </nav>
 
-    <h1>Shop</h1>
 
     <div id="page-content" class="page-content">
+
+    <div id="product-cards" class="product-cards">
+
+    </div>  
+
+      <div id="order" class="order">
+        <h1>Orden</h1>
+       
+        <table id="order-table" class="order-table">
+          <tr>
+            <th>Cantidad</th>
+            <th>Detalle</th>
+            <th>Subtotal</th>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Sitio Web</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Landing Page</td>
+            <td>100</td>
+          </tr>
+        </table>
+        <h2 id="order-total">Total: $150</h2>
+        <div id="order-actions" class="order-actions">
+          
+          <p onclick="displayProducts()"><< Volver</p>
+          <p onclick="pay()">Confirmar >></p>
+
+        </div>
+      </div>
+      
 
     <script src="./js/script.js"></script>
 </body>

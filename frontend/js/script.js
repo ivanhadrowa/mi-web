@@ -17,18 +17,50 @@ function animatedBars(){
 let productList = [];
 let carrito = [];
 let total = 0;
+let order = {
+    items:[]
+}
 
 function add(productId, price){
 
     const product = productList.find(p => p.id === productId);
     product.stock--;
 
+    order.items.push(productList.find(p => p.id === productId))
+    
+
     console.log(productId, price);
     carrito.push(productId);
     total = total + price;
-    document.getElementById("checkout").innerHTML = `Pagar $${total}`
+    document.getElementById("checkout").innerHTML = `Carrito $${total}`
     displayProducts();
 }
+
+async function showOrder(){
+    document.getElementById("product-cards").style.display = "none";
+    document.getElementById("order").style.display = "block";
+    document.getElementById("order-total").innerHTML = `Total: $${total}`;
+
+    let productsHTML = `
+    <tr>
+        <th>Cantidad</th>
+        <th>Detalle</th>
+        <th>Subtotal</th>
+    </tr>`
+    ;
+    order.items.forEach(p => {
+      
+        productsHTML +=
+        ` <tr>
+            <td>1</td>
+            <td>${p.name}</td>
+            <td>$${p.price}</td>
+          </tr>`
+    });
+    
+    document.getElementById('order-table').innerHTML = productsHTML;
+}
+
 
 async function pay(){
     try{
@@ -47,8 +79,9 @@ async function pay(){
         script.src = "https://www.mercadopago.com.ar/integrations/v1/web-payment-checkout.js";
         script.type = "text/javascript";
         script.dataset.preferenceId = preference.preferenceId;
-        document.getElementById("page-content").innerHTML = "";
-        document.querySelector("#page-content").appendChild(script);
+        script.setAttribute("data-button-label", "Pagar con Mercado Pago");
+        document.getElementById("order-actions").innerHTML = "";
+        document.querySelector("#order-actions").appendChild(script);
         
 
 
@@ -59,14 +92,20 @@ async function pay(){
 
     carrito = [];
     total = 0;
+    let order = {
+        items:[]
+    };
     //await fetchProducts();
-    document.getElementById("checkout").innerHTML = `Pagar $${total}`
+    document.getElementById("checkout").innerHTML = `Carrito $${total}`
 }
 
 
 
 
 function displayProducts(){
+    document.getElementById("product-cards").style.display = "flex";
+    document.getElementById("order").style.display = "none";
+
     let productsHTML = '';
     productList.forEach(p => {
         let buttonHTML = `<button class="button-add" onclick="add(${p.id}, ${p.price})" >Agregar</button>`
@@ -83,7 +122,7 @@ function displayProducts(){
             ${buttonHTML}
         </div>`
     });
-    document.getElementById('page-content').innerHTML = productsHTML
+    document.getElementById('product-cards').innerHTML = productsHTML;
 }
 
 async function fetchProducts(){
