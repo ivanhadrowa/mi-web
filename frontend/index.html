@@ -5,9 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>moah.</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
     <link rel="shortcut icon" href="img/Design Moah CD/5.jpg" type="image/x-icon">
+    
   </head>
   <body>
     <header>
@@ -32,7 +34,7 @@
             <a href="">Contacto</a>
         </nav>
 
-    <div class="inicio">
+    <div class="inicio" data-aos="zoom-in-down">
         <div class="inicio-img">
         <img src="./img/imagenes que sirven/hero-image-mobile.png" alt="">
     </div>
@@ -45,10 +47,10 @@
     </div>
 
     <div class="elegirnos" id="nosotros">
-      <div class="foto-nosotros">
+      <div class="foto-nosotros" data-aos="fade-right">
         <img src="./img/imagenes que sirven/us-image.png" alt="">
       </div>
-      <div class="nosotros-texto">
+      <div class="nosotros-texto" data-aos="fade-left">
       <h3>Nosotros</h3>
       <p>Somos una empresa con un objetivo muy claro, satisfacer primero la necesidad del cliente, asesorarlo y brindarle todo nuestros conocimientos para asi lograr un objetivo conjunto, ademas ofrecemos precios muy competitivos en el mercado</p>
     </div>
@@ -57,27 +59,35 @@
     <h2 class="titulo-servicios" id="servicios">Servicios</h2>
     <div class="servicios">
         <div class="tipos-servicios">
-          <img class="servis" src="./img/img servicios/logo hosting.png" alt="">
-        <h3>Host Gratuito</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel molestias, voluptate laborum corporis rerum, id temporibus excepturi, repellendus consequatur dolores tempore itaque. Sunt dolores optio temporibus illum adipisci obcaecati doloribus!</p>
+          <img class="servis" src="./img/img servicios/logo hosting.png" data-aos="fade-right" alt="">
+        <h3 data-aos="fade-down-right">Host Gratuito</h3>
+        <p data-aos="zoom-out-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel molestias, voluptate laborum corporis rerum, id temporibus excepturi, repellendus consequatur dolores tempore itaque. Sunt dolores optio temporibus illum adipisci obcaecati doloribus!</p>
       </div>
 
       <div class="tipos-servicios">
-        <img class="servis" src="./img/img servicios/logo  ceo.png" alt="">
-      <h3>Posicionamiento Web</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel molestias, voluptate laborum corporis rerum, id temporibus excepturi, repellendus consequatur dolores tempore itaque. Sunt dolores optio temporibus illum adipisci obcaecati doloribus!</p>
+        <img class="servis" src="./img/img servicios/logo  ceo.png" data-aos="zoom-in" alt="">
+      <h3 data-aos="fade-down">Posicionamiento Web</h3>
+      <p data-aos="zoom-out-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel molestias, voluptate laborum corporis rerum, id temporibus excepturi, repellendus consequatur dolores tempore itaque. Sunt dolores optio temporibus illum adipisci obcaecati doloribus!</p>
     </div>
 
     <div class="tipos-servicios">
-      <img class="servis" src="./img/img servicios/logo diseño web png.png" alt="">
-    <h3>Diseño 100% Personalizado</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel molestias, voluptate laborum corporis rerum, id temporibus excepturi, repellendus consequatur dolores tempore itaque. Sunt dolores optio temporibus illum adipisci obcaecati doloribus!</p>
+      <img class="servis" src="./img/img servicios/logo diseño web png.png" data-aos="fade-left" alt="">
+    <h3 data-aos="fade-down-left">Diseño 100% Personalizado</h3>
+    <p data-aos="zoom-out-up">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel molestias, voluptate laborum corporis rerum, id temporibus excepturi, repellendus consequatur dolores tempore itaque. Sunt dolores optio temporibus illum adipisci obcaecati doloribus!</p>
   </div>
 
       </div>
     </div>
 
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+	    offset: 120,
+	    delay: 100,
+	    duration: 1100,
+	    easing: 'ease'
+  });
+    </script>
     <script src="./js/script.js"></script>
   </body>
 </html>
