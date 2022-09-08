@@ -17,7 +17,7 @@ let products = [
         name: "Landing Page",
         price: 10000,
         image: "./img/shop img/landing-pages-14-11.png",
-        stock: 100,
+        stock: 4,
     },
 
     {
@@ -25,7 +25,7 @@ let products = [
         name: "Sitio Web",
         price: 15000,
         image: "./img/shop img/landing-pages-14-11.png",
-        stock: 100,
+        stock: 3,
     },
 
     {
@@ -33,8 +33,9 @@ let products = [
         name: "E-commerce",
         price: 27000,
         image: "./img/shop img/landing-pages-14-11.png",
-        stock: 100,
+        stock: 2,
     },
+
 ]
 
 

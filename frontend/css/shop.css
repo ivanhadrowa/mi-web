@@ -6,6 +6,7 @@ header{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    margin-top: 25px;
 }
 
 .product-cards{
@@ -133,4 +134,8 @@ h1{
 h2#order-total{
     text-align: center;
     align-items: center;
+}
+
+#product.cards.product-cards{
+    margin-top: 25px;
 }
