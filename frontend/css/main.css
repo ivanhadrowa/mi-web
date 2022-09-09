@@ -42,13 +42,13 @@ body{
   font-family: 'Roboto Slab', serif;
   line-height: 1.5;
   background-color: #F4F6FC;
-  overflow-x: hidden;
+ 
 }
 
 h1{
   color: var(--rosa);
   font-size: 32px;
-  margin: 0.3em 0 !important;
+  margin:  0 !important;
 }
 
 h3{
