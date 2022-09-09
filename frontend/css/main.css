@@ -27,10 +27,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 html {
-  box-sizing: border-box;}
+  box-sizing: border-box;
+  
+}
 
 *, *:before, *:after {
   box-sizing: border-box;
+  border: 1px solid red;
  }
 
 body{
@@ -39,6 +42,7 @@ body{
   font-family: 'Roboto Slab', serif;
   line-height: 1.5;
   background-color: #F4F6FC;
+  overflow-x: hidden;
 }
 
 h1{
@@ -498,4 +502,10 @@ border-radius: 10px;}
       .footer-svg{
         display: none;
       }
+    }
+
+    .container-inicio{
+      width: 100%;
+      margin: 0;
+      padding: 0;
     }
