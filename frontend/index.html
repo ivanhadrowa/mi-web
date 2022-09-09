@@ -49,7 +49,7 @@
 
     <div class="elegirnos" id="nosotros">
       <div class="foto-nosotros">
-        <img src="./img/imagenes que sirven/us-image.png" alt="">
+        <img data-aos="zoom-out-up" src="./img/imagenes que sirven/us-image.png" alt="">
       </div>
       <div class="nosotros-texto" data-aos="zoom-in-up">
       <h3>Nosotros</h3>
@@ -87,7 +87,7 @@
               <div class="contenedor-campos">
                <div class="campo">
                     <label>Nombre</label>
-                    <input class="input-text" name="name" type="text" placeholder="Nombre" required id="name">
+                    <input class="input-text" name="names" type="text" placeholder="Nombre" required id="name">
                </div>
   
                <div class="campo">
@@ -141,7 +141,7 @@
 
 
     <script>
-      AOS.init();
+     
       const $form = document.querySelector('#form')
       const $buttonMailto = document.querySelector('#opacidad0')
 
@@ -150,7 +150,7 @@
       function handleSubmit(event){
           event.preventDefault()
           const form = new FormData(this)
-          $buttonMailto.setAttribute('href', `mailto:paginasmoah@gmail.com?subject=/Nombre: ${form.get('name')} /Telefono: ${form.get('tel')} /Mail: ${form.get('mail')}&body=${form.get('message')}`)
+          $buttonMailto.setAttribute('href', `mailto:ivanhadrowa0@gmail.com?subject=/Nombre: ${form.get('names')} /Telefono: ${form.get('tel')} /Mail: ${form.get('mail')}&body=${form.get('message')}`)
           $buttonMailto.click()
       }
 
