@@ -50,7 +50,7 @@
 .ideal{
     font-size: 23px;
     margin: 5px 0;
-    color: rgb(51, 49, 49);
+    color: rgb(133, 133, 133);
     text-decoration: underline;
 }
 
@@ -58,4 +58,14 @@
     font-size: 35px;
     margin: 9px 0;
     color: rgb(124, 176, 197);
+}
+
+footer{
+    margin-top: 22px;
+}
+
+@media(min-width:701px){
+    .contenedor-productos{
+        margin-top: 25px;
+    }
 }
