@@ -16,24 +16,30 @@ let products = [
         id: 1,
         name: "Landing Page",
         price: 10000,
+        priceConSignos: "$10.000",
         image: "./img/shop img/landing-pages-14-11.png",
         stock: 4,
+        
     },
 
     {
         id: 2,
         name: "Sitio Web",
         price: 15000,
+        priceConSignos: "$15.000",
         image: "./img/shop img/landing-pages-14-11.png",
         stock: 3,
+    
     },
 
     {
         id: 3,
         name: "E-commerce",
         price: 27000,
+        priceConSignos: "$27.000",
         image: "./img/shop img/landing-pages-14-11.png",
         stock: 2,
+        
     },
 
 ]

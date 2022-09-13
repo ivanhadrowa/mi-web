@@ -124,7 +124,7 @@ function displayProducts(){
         `<div  class="product-container">
             <h3>${p.name}</h3>
             <img src="${p.image}" alt="">
-            <h1>${p.price}</h1>
+            <h1>${p.priceConSignos}</h1>
             ${buttonHTML}
         </div>`
     });

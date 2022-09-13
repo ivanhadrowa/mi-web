@@ -1,0 +1,7 @@
+.contenedor-productos{
+    display: flex;
+}
+
+.productos h4{
+    color: red;
+}
