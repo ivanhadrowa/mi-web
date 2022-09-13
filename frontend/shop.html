@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./css/shop.css">
     <link rel="stylesheet" href="sweetalert2.min.css">
     <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
 
@@ -41,9 +42,9 @@
             <a href="../index.html">Contacto</a>
         </nav>
 
-        <h2>ADQUIRI NUESTROS SERVICIOS!</h2>
+        <h2 data-aos="zoom-out-up">ADQUIRI NUESTROS SERVICIOS!</h2>
 
-    <div id="page-content" class="page-content">
+    <div  id="page-content" class="page-content">
 
     <div id="product-cards" class="product-cards">
 
@@ -78,12 +79,24 @@
           
         </div>
       </div>
+      <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
       <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+      <script>
+        AOS.init({
+        
+       
+        duration: 1100,
+        easing: 'ease'
+    });
+      </script>
+
       <script>
         document.addEventListener("DOMContentLoaded", function(){
     document.querySelector(".loader").style.display="none"
   });
       </script>
     <script src="./js/script.js"></script>
+    
 </body>
 </html>
