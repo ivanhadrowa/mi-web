@@ -98,7 +98,7 @@ app.get('/feedback', function(request, response) {
    })
   });
 
-app.use("/", express.static("frontend"));
+app.use("/", express.static("/"));
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
