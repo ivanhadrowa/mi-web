@@ -12,6 +12,12 @@
     <link rel="shortcut icon" href="./img/favicon.jpg" type="image/x-icon">
   </head>
   <body>
+
+    <div class="loader">
+      <div class='spinner'></div>
+  </div>
+
+  
     <header>
       <a href="../index.html"
         ><img class="logo" src="./img/Design Moah CD/moah rosa png.png" alt=""
@@ -73,6 +79,12 @@
         </div>
       </div>
       <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+      <script>
+        AOS.init();
+        document.addEventListener("DOMContentLoaded", function(){
+    document.querySelector(".loader").style.display="none"
+});
+      </script>
     <script src="./js/script.js"></script>
 </body>
 </html>

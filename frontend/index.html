@@ -25,7 +25,11 @@
   </a>
   
   <body>
+    <div class="loader">
+      <div class='spinner'></div>
+  </div>
 
+  
     <header>
       <a href=""
         ><img class="logo" src="/img/Design Moah CD/moah rosa png.png" alt=""
@@ -177,6 +181,12 @@
 	    duration: 1100,
 	    easing: 'ease'
   });
+    </script>
+    <script>
+      AOS.init();
+      document.addEventListener("DOMContentLoaded", function(){
+  document.querySelector(".loader").style.display="none"
+});
     </script>
     <script src="./js/script.js"></script>
   </body>
