@@ -37,7 +37,7 @@ let products = [
         name: "E-commerce",
         price: 27000,
         priceConSignos: "$27.000",
-        image: "./img/servicios/ecomerce.png",
+        image: "./img/servicios/ecomerce1.jpg",
         stock: 2,
         
     },
