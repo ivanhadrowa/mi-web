@@ -17,7 +17,7 @@ let products = [
         name: "Landing Page",
         price: 10000,
         priceConSignos: "$10.000",
-        image: "./img/servicios/landinf.png",
+        image: "./img/servicios/landing2.jpg",
         stock: 4,
         
     },
@@ -27,7 +27,7 @@ let products = [
         name: "Sitio Web",
         price: 15000,
         priceConSignos: "$15.000",
-        image: "./img/servicios/sitio.png",
+        image: "./img/servicios/sitio3.JPG",
         stock: 3,
     
     },
