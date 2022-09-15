@@ -17,7 +17,7 @@ let products = [
         name: "Landing Page",
         price: 10000,
         priceConSignos: "$10.000",
-        image: "./img/servicios/landing2.jpg",
+        image: "./img/servicios/landing2.JPG",
         stock: 4,
         
     },
