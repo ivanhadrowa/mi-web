@@ -109,7 +109,7 @@ function displayProducts(){
     let productsHTML = '';
     productList.forEach(p => {
         let buttonHTML = `<button class="button-add" onclick="add(${p.id}, ${p.price}, Swal.fire({
-            position: 'top-end',
+            position: 'center',
             icon: 'success',
             title: 'Añadido al Carrito',
             showConfirmButton: false,

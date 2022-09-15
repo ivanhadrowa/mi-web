@@ -18,7 +18,7 @@ let products = [
         price: 10000,
         priceConSignos: "$10.000",
         image: "./img/servicios/landing2.JPG",
-        stock: 4,
+        stock: 100,
         
     },
 
@@ -28,7 +28,7 @@ let products = [
         price: 15000,
         priceConSignos: "$15.000",
         image: "./img/servicios/sitio3.JPG",
-        stock: 3,
+        stock: 100,
     
     },
 
@@ -38,7 +38,7 @@ let products = [
         price: 27000,
         priceConSignos: "$27.000",
         image: "./img/servicios/ecomerce1.jpg",
-        stock: 2,
+        stock: 100,
         
     },
 

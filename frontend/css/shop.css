@@ -168,3 +168,16 @@ h3{
     }
 }
 
+.confirmar{
+    padding: 1rem 0.5rem;
+    background-color: rgb(157, 201, 157);
+    border-radius: 10px;
+    margin-left: 5px;
+}
+
+.volver{
+    padding: 1rem 0.5rem;
+    background-color: rgb(209, 167, 162);
+    border-radius: 10px;
+    margin-right: 5px;
+}
