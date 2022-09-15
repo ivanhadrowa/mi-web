@@ -16,6 +16,7 @@
     box-shadow: 0px 0px 17px -10px rgba(0,0,0,0.75);
     border-radius: 10px ;
     border: 2px solid rgb(180, 158, 180);
+    transition: .4s;
 }
 
 .producto:hover{
@@ -24,8 +25,9 @@
     -moz-box-shadow: 4px 4px 9px -4px rgba(0,0,0,0.75);
     box-shadow: 4px 4px 9px -4px rgba(0,0,0,0.75);
     padding: -3px;
-    background-color:rgb(245, 240, 240) ;
+    background-color:rgb(236, 230, 230) ;
     cursor: default;
+    transition: .2s;
 }
 
 
@@ -52,14 +54,15 @@
 .ideal{
     font-size: 23px;
     margin: 5px 0;
-    color: rgb(133, 133, 133);
-    text-decoration: underline;
+    color: rgb(61, 59, 59);
+    text-align: center;
+
 }
 
 .tipo-pagina{
     font-size: 35px;
     margin: 9px 0;
-    color: rgb(124, 176, 197);
+    color: rgb(102, 169, 196);
 }
 
 footer{

@@ -153,6 +153,11 @@ h2{
     margin: 30px auto;
 }
 
+h3{
+    color: rgb(58, 57, 57);
+}
+
+
 
 @media (min-width:701px){
     h2{
@@ -162,3 +167,4 @@ h2{
         
     }
 }
+
