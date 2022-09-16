@@ -551,11 +551,3 @@ margin-top: 20px;}
   justify-content: center;
   align-items: center; }
 
-  @media(min-width:1000px){
-    .contenedor-footer{
-      padding-top: 3rem;
-      background-color: #b9bae6;
-      display: flex;
-      justify-content: space-around;
-    }
-  }
