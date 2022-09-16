@@ -170,15 +170,23 @@ h3{
 }
 
 .confirmar{
-    padding: 1rem 0.5rem;
+    padding: 2rem 1rem;
     background-color: rgb(157, 201, 157);
     border-radius: 10px;
     margin-left: 5px;
+    height: 3rem;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 108px;
 }
 
 .volver{
-    padding: 1rem 0.5rem;
+    padding: 2rem 0.5rem;
     background-color: rgb(209, 167, 162);
     border-radius: 10px;
     margin-right: 5px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
