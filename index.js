@@ -15,7 +15,7 @@ let products = [
     {
         id: 1,
         name: "Landing Page",
-        price: 15.000,
+        price: 15000,
         priceConSignos: "$15.000",
         image: "./img/servicios/landing2.JPG",
         stock: 100,
@@ -25,7 +25,7 @@ let products = [
     {
         id: 2,
         name: "Sitio Web",
-        price: 25.000,
+        price: 25000,
         priceConSignos: "$25.000",
         image: "./img/servicios/sitio3.JPG",
         stock: 100,
@@ -35,7 +35,7 @@ let products = [
     {
         id: 3,
         name: "E-commerce",
-        price: 40.000,
+        price: 40000,
         priceConSignos: "$40.000",
         image: "./img/servicios/ecomerce1.jpg",
         stock: 100,
